@@ -48,11 +48,11 @@ export const generateTourResponse = async ({ city, country }: TourProps) => {
         "country": "${country}",
         "title": "title of the tour",
         "description": "short description of the city and tour",
-        "stops": ["short paragraph on the stop 1 ", "short paragraph on the stop 2","short paragraph on the stop 3"]
+        "stops": ["name of stop 1", "name of stop 1","name of stop 1"]
       }
     }
     "stops" property should include only three stops.
-    Its important to never add , at the last element of the array. Ensure its a valid JSON, with no additional characters.
+    Its important to never add "," at the last element of the array. Ensure its a valid JSON, with no additional characters.
     If you can't find info on exact ${city}, or ${city} does not exist, or it's population is less than 1, or it is not located in the following ${country},   return { "tour": null }, with no additional characters.`;
 
   try {
