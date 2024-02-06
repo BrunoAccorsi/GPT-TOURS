@@ -140,6 +140,8 @@ export const getAllTours = async (searchTerm?: string) => {
           city: {
             contains: searchTerm,
           },
+        },
+        {
           country: {
             contains: searchTerm,
           },

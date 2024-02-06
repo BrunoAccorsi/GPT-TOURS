@@ -19,7 +19,7 @@ const TourPage = (props: Props) => {
           <input
             type="text"
             className="input input-bordered join-item w-full"
-            placeholder="Enter city ot Country here..."
+            placeholder="Enter city or Country here..."
             value={searchValue}
             onChange={(e) => setSearchValue(e.target.value)}
             required
